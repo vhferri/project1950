@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+author:	Rachel 
+date:	March 2019
+notes:	Quiz Page - Draft 1
+-->
+<head>
+ 
+        <title>Form</title>
+		<meta charset="utf-8" />
+
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+    <HEADER>
+        <br>
+    </HEADER>
+<!-- HEADER -->
+
+<!--    NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a class="navbar-brand" href="index.html"><img src="images/bcit.png"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Resources</a>
+            </li>           
+
+            <li class="nav-item active">
+                <a class="nav-link" href="about.html">About</a>
+            </li>      
+
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Lectures
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">01: Tools and Standards</a>
+                  <a class="dropdown-item" href="#">02: HTML5</a>
+                  <a class="dropdown-item" href="#">03: Advanced CSS</a>
+                  <a class="dropdown-item" href="#">04: CSS Layout</a>
+                  <a class="dropdown-item" href="#">05: Responsive Design</a>
+                  <a class="dropdown-item" href="#">06: CSS3</a>
+                  <a class="dropdown-item" href="#">07: javascript Framework</a>
+                  <a class="dropdown-item" href="#">08: Server Architecture</a>
+                  <a class="dropdown-item" href="#">09: Templates, Tools</a>
+                  <a class="dropdown-item" href="#">10: Methodology</a>
+                </div>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="quiz.html">Quiz</a>
+            </li>      
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+    </nav>
+<!--    NAVBAR -->
+
+        <div id="content">
+	
+                <img src="images/students.jpg" alt="bcit students">
+                <br>
+                <br>
+                <hr>
+                <h2>1950 Quiz Example Page</h2>
+                
+                <fieldset>
+                
+                    <legend><span class="number">1</span>Student Information</legend>
+                    
+                    <label  for="firstname">First Name</label>
+                        <input 	type="text" 
+                                id="firstname"
+                                name="firstname"
+                                value="first name"
+                                size="30" 
+                                class="width" />
+                                
+                        <br />
+                        
+                        <label for="lastname">Last Name</label>
+                        <input 	type="text" 
+                                id="lastname"
+                                name="lastname"
+                                value="last name"
+                                size="30" 
+                                class="width" />
+                                
+                        <br />		
+                        
+                        <label for="studentnumber">Student Number</label>
+                        <input 	type="text" 
+                                id="studentnumber"
+                                name="studentnumber"
+                                value="student number"
+                                size="30" 
+                                class="width" />
+                    
+                </fieldset>
+                    <br />	
+                
+                <div class="allign">
+                <feildset>
+
+                        <legend><span class="number">2</span>Multiple Choice</legend>
+                    
+                        <label for="true" >True</label>
+                        <input 	type="radio" 
+                                name="prefix" 
+                                id="true"
+                                class="padding"/>	
+                
+                            
+                        <label for="False">False</label>
+                        <input 	type="radio" 
+                                name="prefix" 
+                                id="False" 
+                                class="padding"/>
+                
+                </fieldset>	
+                </div>
+                    
+                   
+                    
+                    <fieldset>	
+                    <legend><span class="number">3</span>Best choice from List</legend>
+                    
+                    <select name="courses" id="courses" size="4" multiple="multiple">
+                        
+                        <optgroup  label="List of Choices">
+                        <option value="COMP1850">Option 1</option>
+                        <option value="COMP1950">Option 2</option>
+                        <option value="COMP1920">Option 3</option>
+                        <option value="COMP1409">Option 4</option>
+                        <option value="COMP1630">Option 5</option>
+                        <option value="COMP1911">Option 6</option>	
+                        <option value="COMP2899">Option 7</option>	
+                        </optgroup>
+                    </select>
+                    
+                    </fieldset>				
+                    <br />
+                    
+                    <fieldset>	
+                    <legend><span class="number">4</span>Short Answer</legend>
+                    <p>This is where you will ask the question</p>
+                    <textarea 	name="comments" 
+                                placeholder="Comments"
+                                id="comments"></textarea>
+                    </fieldset>				
+                    <br />
+                   
+                    <div class="allign">
+                    <feildset>
+
+                        <legend><span class="number">5</span>Additional Questions</legend>
+                        
+                        <p>If you would like to add additonal questions that cannot be answered directly, for example
+                           practical questions may be asked here.
+                        </p>
+
+                    </feildset>
+                    </div>
+                
+                <div class="submit">
+                <input  class="submitbutton" type="submit" value="Submit" />	
+                </div>
+                </form>	
+        
+                </div>
+
+
+    <FOOTER class="footer">
+        <div class="container">
+            <span class="text-muted">@stickyfooter</span>
+        </div>
+    </FOOTER>
+
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/form_stylesheet.css" title="default" />
+
+
+
+</body>
+</html>
